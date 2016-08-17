@@ -1,0 +1,14 @@
+body{
+border:1px solid; margin-left:10px;	
+margin-right:10px; padding:40px;
+background-image: url("planet.png");
+background-attachment: fixed;
+}
+
+#div1{
+border:1px dotted; margin-left:auto; margin-right:auto;
+padding: 20px; font-family: Verdana; font-size: 1.5em;
+background-color: #ffffda; color: #ff0000;
+width: 50%;
+opacity:0.5
+}
