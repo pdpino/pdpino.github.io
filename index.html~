@@ -6,6 +6,7 @@
 	<metaname="keywords" content="HTML,IIC1005,PUC">
 	<metaname="description" content="Clase HTML PUC">
 	<BODY>
-	Hola 
+	Hola <br/>
+	<a href="http://www.uc.cl" onclick="javascript:alert('hola manjarcito')"> uc </a>
 	</BODY>
 </HTML>
