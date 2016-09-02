@@ -1,24 +1,17 @@
-<HTML>
-	<HEAD>
-	<TITLE>
-		Titulo
-	</TITLE>
-	<metaname="keywords" content="HTML,IIC1005,PUC">
-	<metaname="description" content="Clase HTML PUC">
-	<link href="./prueba.css" rel="stylesheet" type="text/css">
-	</HEAD>
-
-	<BODY>
-		Hola <br/>
-		<a href="http://www.google.cl" onclick="javascript:alert('hola')"> google </a> <br/>
-		<img src="candle.png"/>
-		<i>Descripcion</i>
-
+<html>
+	<head>
+		<title>Sample Document</title>
+		<script>
+			var n = document.documentElement;
+			var c1 = n.firstElementChild.firstElementChild;
+			// console.log(c1.textContent);
+			alert(c1.textContent);
+		</script>
+	</head>
+	<body>
+		<h1>An HTML document</h1>
 		<p>
-		Parrafo 1
+		This is a <i>simple</i> document
 		</p>
-
-		<div id="div1"> Texto dentro de div </div>
-
-	</BODY>
-</HTML>
+	</body>
+</html>
