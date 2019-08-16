@@ -1,0 +1,31 @@
+---
+layout: post
+title:  "Slope One Predictors"
+date:   2019-08-16 14:00:00 -0400
+categories: week1
+week: "1"
+---
+
+**Paper:** Lemire, D., & Maclachlan, A. (2005). Slope One Predictors for Online Rating-Based Collaborative Filtering.
+
+The paper introduces the Slope One Scheme, a CF algorithm to predict item ratings, and argues that the results are comparable to the 2005-state-of-the-art methods.
+The scheme is based on the following core idea: _the rating difference between two items is similar across users_.
+For example, if an user rated two items, J and K, with scores of 2 and 3 respectively, then the difference between the ratings, 3 - 2 = 1, is a good estimator of the difference between those two items.
+Therefore, if another user rated only the item J with a score of 2.5, the scheme estimates that this user will rate the item K with a score of 2.5 + 1 = 3.5.
+Of course, this is a simplified example, and the method takes into account the estimators across users.
+
+I find interesting how simple the core idea is, and how it turns out to be a competitive algorithm.
+Moreover, the author states that the strength of the algorithm comes from taking into account only important data, which I think is an interesting principle on how to design recommender system algorithms.
+Furthermore, they apply this idea again when presenting two improvements to the method, the weighted scheme and the bipolar scheme, by refining more and more the data taken into account to make the recommendation.
+
+On the other hand, I think the method is not widely used now, even though the paper shows that is a competitive method for 2005.
+A quick [google scholar search][google-scholar-search] and on the paper [citations][citations], shows some results after the original paper, but not much, so I assume that the current methods are better.
+
+Finally, I think the paper could have included some more detailed evaluation of the method.
+They use multiple baselines to compare the results, which is fine, but I missed some more detailed results.
+They could have presented more than one metric, give some examples when the algorithm performs good and when it doesn't, and they could have shown how much was the improvement on the query time.
+Besides, does the MAE improvements are statistically significant? I can't tell from what they presented.
+
+
+[google-scholar-search]: https://scholar.google.cl/scholar?q=recommender+systems+%22slope+one%22&hl=en&as_sdt=0&as_vis=1&oi=scholart
+[citations]: https://scholar.google.cl/scholar?cites=7373225641249685044&as_sdt=2005&sciodt=0,5&hl=en
