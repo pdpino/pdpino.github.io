@@ -3,6 +3,7 @@ layout: post
 title:  "Scalable CF"
 date:   2019-08-25 19:00:00 -0400
 categories: week2
+week: "2"
 ---
 
 **Paper:** Takács, G., Pilászy, I., Németh, B., & Tikk, D. (2009). Scalable collaborative filtering approaches for large recommender systems.

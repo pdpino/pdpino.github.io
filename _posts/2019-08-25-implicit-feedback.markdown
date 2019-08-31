@@ -3,6 +3,7 @@ layout: post
 title:  "CF for Implicit Feedback"
 date:   2019-08-25 19:00:00 -0400
 categories: week2
+week: "2"
 ---
 
 **Paper:** Hu, Y., Koren, Y., & Volinsky, C. (2008, December). Collaborative filtering for implicit feedback datasets.
