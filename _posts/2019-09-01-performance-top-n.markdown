@@ -7,6 +7,7 @@ week: "3"
 ---
 
 **Paper:** Cremonesi, P., Koren, Y., & Turrin, R. (2010, September). Performance of recommender algorithms on top-n recommendation tasks. In Proceedings of the fourth ACM conference on Recommender systems (pp. 39-46). ACM.
+{: .paper-name}
 
 The paper criticizes the typical way of evaluating recommender systems (in 2010), namely the use of error metrics (such as RMSE or MAE), by arguing that accuracy metrics (such as precision or recall) capture better the essence of a top-N recommendation task. Specifically, the authors make a comparison of recommendation methods on accuracy metrics, and they show that methods that perform well on error metrics, does not necessarily perform well on accuracy metrics.
 To this end, they compare the performance of some baseline algorithms, some algorithms that performed well on error metrics, and some modified methods to focus on accuracy metrics.

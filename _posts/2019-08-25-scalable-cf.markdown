@@ -7,6 +7,8 @@ week: "2"
 ---
 
 **Paper:** Takács, G., Pilászy, I., Németh, B., & Tikk, D. (2009). Scalable collaborative filtering approaches for large recommender systems.
+{: .paper-name}
+
 
 The paper presents many variants of the MF model, and compare them with the state-of-the-art implementations on multiple datasets, including the Netflix Prize (very popular at the time).
 They present different learning techniques, subsampling techniques, order of the samples when training, and corrections.

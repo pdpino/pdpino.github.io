@@ -7,6 +7,8 @@ week: "1"
 ---
 
 **Book chapter:** Schafer, J. B., Frankowski, D., Herlocker, J., & Sen, S. (2007). Collaborative filtering recommender systems.
+{: .paper-name}
+
 
 This book chapter provides a big overview of the Collaborative Filtering (CF) Recommender Systems at the time.
 The information is very thorough, as they show core concepts, uses, algorithms, evaluation techniques and the next challenges for the topic. I think it gives a good overview for someone starting to study this topic, though by now it may be a little outdated in some aspects.

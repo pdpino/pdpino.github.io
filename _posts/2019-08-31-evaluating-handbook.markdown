@@ -7,6 +7,7 @@ week: "3"
 ---
 
 **Paper:** Guy, S., & Gunawardana, A.. (2011) “Evaluating recommendation systems.” In Recommender systems handbook, pp. 257-297. Springer US, 2011.
+{: .paper-name}
 
 This book chapter presents main aspects of evaluating a recommender system.
 Specifically, they present the _how_ you evaluate, the type of study you can use; and the _what_ you evaluate, presented as the the properties that you can measure (or at least try to measure).

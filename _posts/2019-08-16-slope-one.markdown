@@ -7,6 +7,8 @@ week: "1"
 ---
 
 **Paper:** Lemire, D., & Maclachlan, A. (2005). Slope One Predictors for Online Rating-Based Collaborative Filtering.
+{: .paper-name}
+
 
 The paper introduces the Slope One Scheme, a CF algorithm to predict item ratings, and argues that the results are comparable to the 2005-state-of-the-art methods.
 The scheme is based on the following core idea: _the rating difference between two items is similar across users_.

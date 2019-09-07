@@ -7,6 +7,8 @@ week: "2"
 ---
 
 **Paper:** Hu, Y., Koren, Y., & Volinsky, C. (2008, December). Collaborative filtering for implicit feedback datasets.
+{: .paper-name}
+
 
 The paper presents an explanation of an implicit feedback model, by adapting ideas from matrix factorization with explicit feedback.
 They explain very well the differences in the data, assumptions, model, etc.

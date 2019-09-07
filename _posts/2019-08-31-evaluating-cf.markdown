@@ -7,6 +7,8 @@ week: "3"
 ---
 
 **Paper:** Herlocker, J. L., Konstan, J. A., Terveen, L. G., & Riedl, J. T. (2004). Evaluating collaborative filtering recommender systems. ACM Transactions on Information Systems (TOIS), 22(1), 5-53.
+{: .paper-name}
+
 
 The paper presents different aspects to decide how to evaluate a recommender system.
 Namely, they categorize three important aspects: the possible user's tasks, the types of dataset characteristics and the types of metrics.
