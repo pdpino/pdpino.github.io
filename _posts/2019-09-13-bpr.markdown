@@ -1,0 +1,35 @@
+---
+layout: post
+title:  "BPR from Implicit Feedback"
+date:   2019-09-13 10:00:00 -0300
+categories: week5
+week: "5"
+---
+
+**Paper:** Rendle, S., Freudenthaler, C., Gantner, Z., & Schmidt-Thieme, L. (2009). BPR: Bayesian personalized ranking from implicit feedback. In Proceedings of the Twenty-Fifth Conference on Uncertainty in Artificial Intelligence (pp. 452-461). AUAI Press.
+{: .paper-name}
+
+The paper presents BPR, a learning framework for recommender systems.
+The traditional models train by iterating over instances, which are pairs of one user and one item; BPR offers a different approach.
+First, the authors present an optimization criterion that takes into account one user, one liked item and one disliked item, hence the model trains by looking at triples instead of pairs, and learns how to rank the liked item above the disliked one.
+Second, they present a way of sampling the items. Specifically, they show that sampling randomly and with replacement leads to much faster learning, opposed to iterating over the users in order.
+Furthermore, they show that the BPR technique outperforms the traditional learning methods (for 2009).
+
+
+The main idea of BPR is to take one user and two items at the time.
+Note that with implicit feedback, the user-item interaction will be considered a _like_, and a non-observed interaction will be a _dislike_.
+So, could this idea be improved by receiving actual negative feedback?
+I think that modern platforms, such as Netflix, may be able to estimate negative feedback from certain user interaction.
+For instance, if a user gets a movie recommended multiple times and do not consume it, it can be taken as negative feedback (opposed to a movie that has never been recommended to the user).
+Could this be used to further improve BPR?
+Three categories of feedback could be considered: positive, non-present and negative, and the model could learn to differentiate the three of them.
+
+
+I liked that they adapted 2009-state-of-the-art methods, namely KNN and MF, to use them with BPR.
+Not only they present this new framework, but they link it directly to trending methods, which I think makes it easier for the community to start using it and further improve it.
+I would like to see how BPR could be applied (or is being applied) to deep learning models or other 2019-state-of-the-art methods.
+
+
+One thing that I missed from the paper is the use of appropriate ranking metrics.
+They argue that BPR fits better with the ranking problem, as it explicitly tries to learn how to rank different items.
+Nonetheless, they didn't use any ranking metric such as MAP or nDCG, and they compare the results just with AUC.
