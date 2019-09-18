@@ -1,0 +1,45 @@
+---
+layout: post
+title:  "Youtube Recommendations"
+date:   2019-09-18 10:00:00 -0300
+categories: week6
+week: "6"
+---
+
+**Paper:** Covington, P., Adams, J., & Sargin, E. (2016). Deep neural networks for youtube recommendations. In Proceedings of the 10th ACM conference on recommender systems (pp. 191-198). ACM.
+{: .paper-name}
+
+The paper presents an overview of the deep learning models used to recommend videos on Youtube.
+Specifically, they divide the recommendation problem in two.
+First, there is a neural network that generates a set of candidate videos for a given user, reducing the millions of videos available online to hundreds of candidates.
+Second, another neural network use those candidates to generate a personalized ranked list, containing dozens of videos to present to the user.
+
+
+The main thing to notice between the deep learning approach and traditional models, such as MF, is how easy is to add more features as input in a neural network.
+For instance, is interesting how they try to solve the freshness aspect of their recommendation.
+They add the feature "Example Age" to the network, that indicates the age of the training sample, which helps modeling the fact that users prefer new content.
+This kind of solution could not be implemented this easily in a traditional matrix factorization model.
+
+
+In terms of the implementation, I don't think they shared enough details to be able to reproduce their scheme.
+They mention that a lot of testing and small decisions had to be made to achieve the best performance, though it seems that some details are kept for themselves.
+For instance, in the candidate generation network, they said that a softmax with negative subsampling works better than a hierarchical softmax, but they don't discuss it further.
+They could have shown a performance comparison between the two in terms of multiple metrics, as is usually done in other papers.
+I consider this kind of analysis to be important, since it provides an explanation of the decision, which can help the decisions of other researchers on other similar problems.
+
+
+
+Nonetheless, I liked that they shared many insights and learnings from the process, which can also be very useful to other researchers, or in this case, even for real-life applications.
+For instance, they state that weighting the users in the loss function improves the results, or that is better not to present the last search results in the user home page.
+
+
+I liked that they assessed their model with both offline and live experiments, since both can offer different perspectives on the evaluation.
+Moreover, they state that the results of both type of experiments are not always correlated, which indicates that there may be an important gap from a research study to a real-life application.
+Nevertheless, they didn't share any performance metric result!
+They could have shown different approaches tested, compare them in terms of offline results, online results, shared more details about the A/B testing, and so on.
+(Of course, all of the internal details that they didn't share are part of the value of Youtube as a company, so is understandable).
+
+
+Finally, I noticed that they are able to differentiate positive and negative implicit feedback.
+In older papers, with older applications, they usually assume all implicit feedback to be positive, since they can't receive or measure more than this.
+Instead, here they record when a user does not click on a recommendation, and take that as negative feedback, which gives much more information than the former case.
