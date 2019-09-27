@@ -1,0 +1,25 @@
+---
+layout: post
+title:  "RL Ensemble for e-commerce"
+date:   2019-09-27 12:00:00 -0300
+categories: week7
+week: "7"
+---
+
+**Paper:** Brodén, B., Hammar, M., Nilsson, B. J., & Paraschakis, D. (2018). Ensemble recommendations via Thompson sampling: an experimental study within e-Commerce. In 23rd International Conference on Intelligent User Interfaces (pp. 19-29). ACM.
+{: .paper-name}
+
+
+The paper presents a study on tackling an e-commerce recommendation problem using reinforcement learning.
+In an online shopping setting, users are typically unidentified, so they propose solving an item-to-item recommendation problem: given an item, recommend other items, independent to the user.
+To this end, they propose an ensemble method consisting of multiple models giving recommendations, and the use of reinforcement learning to choose the final ranked list based on said recommendations.
+
+
+Besides studying the problem, they implicitly present a recommendation framework that can be used for (almost) any e-commerce or similar problem, and they show that performs well on real-world datasets.
+The method is scalable in terms of number of items, and allows adding more recommendation models seamlessly, which makes it flexible for customization.
+Also, it solves the cold-start problem, since fallback methods can be added to the ensemble to increase coverage and performance, as they show in the experiments.
+This seems like a very robust and flexible method, and it could be applied in similar recommendation applications.
+
+
+Nonetheless, I missed a comparison with state-of-the-art methods applied to the same problem.
+Without that, I'm not sure if the method actually presents an improvement to other approaches.
