@@ -16,10 +16,10 @@
 title: pdpino.github.io
 author: Pablo Pino
 email: pdpino@uc.cl
-description: Coming soon...
+# description: Coming soon...
 baseurl: "/" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-# twitter_username: jekyllrb
+twitter_username: pdpinog
 github_username: pdpino
 
 # Build settings
@@ -27,6 +27,7 @@ markdown: kramdown
 theme: minima
 plugins:
   - jekyll-feed
+  - jekyll-redirect-from
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
